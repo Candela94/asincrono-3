@@ -10,30 +10,36 @@
 .body{
 
     font-family: poppins;
+    display: flex;
+    
+   
 }
 
 
 .contenedor{
 max-width: 120em;
-width: 90%;
+width: 50%;
 padding: 1em;
-background-color: rgb(221, 227, 227);
+/* background-color: rgb(221, 227, 227); */
+border-radius: 20px;
+
 
 
 }
 
 .contenedor .ul{
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     display: flex;
     flex-flow: row nowrap;
+    margin: 1em;
 
     justify-content: flex-start;
     align-items: center;
 }
 
 .contenedor .li{
-    background-color: rgb(232, 227, 227);
+    /* background-color: rgb(232, 227, 227); */
     list-style: none;
     padding: 1em;
     margin: 0 2em 0 0;
@@ -43,20 +49,22 @@ background-color: rgb(221, 227, 227);
 }
 
 .contenedor .li.activo{
-    background-color: salmon;
+    border: solid 1px rgb(104, 98, 98);
+    box-shadow: 1px 1px 5px;
 }
 .contenedor .subcontenedor{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     min-height: 10vh;
     position: relative;
 }
 
 .contenedor .bloque{
-    background-color: blue;
+    /* background-color: blue; */
     padding: 1em;
     margin: 1em;
     top: 0;
     position: absolute;
+    border-radius: 20px;
     opacity: 0;
     transition: all 0.5s ease;
 }
@@ -65,4 +73,6 @@ background-color: rgb(221, 227, 227);
 .contenedor .bloque.activo{
     opacity: 1;   
     /* cuando no están activos, por defecto temndrán opacity 0  */
+    border: solid 1px rgb(104, 98, 98);
+    box-shadow: 1px 1px 5px;
 }
